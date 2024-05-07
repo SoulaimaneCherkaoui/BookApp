@@ -2,9 +2,10 @@ package com.example.seashapp.models;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class GoogleBooksResponse {
+public class GoogleBooksResponse implements Serializable {
 @SerializedName(value = "kind")
     private String kind;
     @SerializedName(value = "totalItems")

@@ -2,13 +2,16 @@ package com.example.seashapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.seashapp.activites.BookDetailActivity;
 import com.example.seashapp.adapters.BookAdapter;
 import com.example.seashapp.models.Book;
 import com.example.seashapp.models.GoogleBooksResponse;
@@ -74,5 +77,9 @@ String query = editTextQ.getText().toString();
 
 
         });
-
+listViewBook.setOnItemClickListener((adapterView,view,i,l)->{
+    Intent intent=new Intent(getApplicationContext(),BookDetailActivity.class);
+    intent.putExtra("books",books.get(i)); // i represente la position et Book doit etre serialise
+    startActivity(intent);
+});
 }}

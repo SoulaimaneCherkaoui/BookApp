@@ -2,7 +2,9 @@ package com.example.seashapp.models;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
     @SerializedName("volumeInfo")
     private volumeInfo volumeInfo;
 

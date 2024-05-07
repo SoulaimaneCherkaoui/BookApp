@@ -2,7 +2,9 @@ package com.example.seashapp.models;
 
 import com.google.gson.annotations.SerializedName;
 
-public class imageLinks {
+import java.io.Serializable;
+
+public class imageLinks implements Serializable {
     @SerializedName("smallThumbnail")
     private String smallThumbnail;
     @SerializedName("thumbnail")
