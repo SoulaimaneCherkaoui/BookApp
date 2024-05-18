@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#C6D4FF"
     tools:context=".MainActivity">
 
     <EditText
@@ -19,11 +20,14 @@
     android:layout_height="wrap_content"
     android:layout_below="@+id/editTextQuery"
     android:layout_margin="10dp"
+    android:backgroundTint="#12664F"
     android:text="@string/button_search" />
     <ListView
         android:id="@+id/listViewBooks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+
+
         android:layout_below="@id/buttonSearch"/>
 </RelativeLayout>
